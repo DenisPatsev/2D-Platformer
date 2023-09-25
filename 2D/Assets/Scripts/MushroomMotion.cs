@@ -8,6 +8,8 @@ public class MushroomMotion : MonoBehaviour
     [SerializeField] private Rigidbody2D _mushroomRigidbody;
     [SerializeField] private ContactFilter2D _filter;
 
+    private const string IsRun = "isRun";
+
     private Animator _animator;
 
     private RaycastHit2D[] _results = new RaycastHit2D[1];
@@ -30,14 +32,14 @@ public class MushroomMotion : MonoBehaviour
             {
                 if (_results[i])
                 {
-                    _animator.SetBool("isRun", true);
+                    _animator.SetBool(IsRun, true);
                     transform.Translate(Time.deltaTime, 0, 0);
                 }
             }
         }
         else
         {
-            _animator.SetBool("isRun", false);
+            _animator.SetBool(IsRun, false);
         }
     }
 }

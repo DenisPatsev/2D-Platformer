@@ -1,21 +1,16 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    private int _coins;
-
-    private void Start()
-    {
-        _coins = 0;
-    }
+    [SerializeField] private UnityEvent _coinTrigger;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.TryGetComponent<Coin>(out Coin coin))
         {
-            _coins++;
+            _coinTrigger.Invoke();
             Destroy(collision.gameObject);
-            Debug.Log("Монеты: " + _coins);
         }
     }
 }

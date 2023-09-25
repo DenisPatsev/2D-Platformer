@@ -4,10 +4,13 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 
-public class MoveController : MonoBehaviour
+public class MoveDirectionSetter : MonoBehaviour
 {
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _speed;
+
+    private const string IsRun = "isRun";
+    private const string IsJump = "isJump";
 
     private SpriteRenderer _playerRenderer;
     private Animator _playerAnimator;
@@ -30,14 +33,14 @@ public class MoveController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            _playerAnimator.SetBool("isRun", true);
+            _playerAnimator.SetBool(IsRun, true);
             _playerRenderer.flipX = true;
 
             transform.Translate(_speed * Time.deltaTime * -1, 0, 0);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            _playerAnimator.SetBool("isRun", true);
+            _playerAnimator.SetBool(IsRun, true);
             _playerRenderer.flipX = false;
 
             transform.Translate(_speed * Time.deltaTime, 0, 0);
@@ -53,19 +56,19 @@ public class MoveController : MonoBehaviour
 
             if (hit)
             {
-                _playerAnimator.SetBool("isJump", true);
+                _playerAnimator.SetBool(IsJump, true);
                 _playerRigidbody.AddForce(Vector2.up * _jumpForce);
             }
         }
         else
         {
-            _playerAnimator.SetBool("isJump", false);
+            _playerAnimator.SetBool(IsJump, false);
         }
     }
 
     private void SetDefaultState()
     {
-        _playerAnimator.SetBool("isRun", false);
-        _playerAnimator.SetBool("isJump", false);
+        _playerAnimator.SetBool(IsRun, false);
+        _playerAnimator.SetBool(IsJump, false);
     }
 }

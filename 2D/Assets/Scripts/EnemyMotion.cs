@@ -7,6 +7,8 @@ public class EnemyMotion : MonoBehaviour
 {
     [SerializeField] private float _speed;
 
+    private const string IsWalk = "isWalk";
+
     private SpriteRenderer _spriteRenderer;
     private Animator _enemyAnimator;
     private int _collisionCount;
@@ -20,7 +22,7 @@ public class EnemyMotion : MonoBehaviour
         _collisionCount = 0;
         _countDivider = 2;
 
-        _enemyAnimator.SetBool("isWalk", true);
+        _enemyAnimator.SetBool(IsWalk, true);
     }
 
     private void Update()
