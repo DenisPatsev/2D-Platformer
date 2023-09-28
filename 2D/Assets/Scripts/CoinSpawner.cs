@@ -5,7 +5,7 @@ public class CoinSpawner : MonoBehaviour
 {
     [SerializeField] private Coin _coin;
 
-    private GameObject[] _generators;
+    private Spawner[] _generators;
     private Transform _spawnerTransform;
 
     private float _secondCount;
@@ -16,7 +16,7 @@ public class CoinSpawner : MonoBehaviour
 
     private void Start()
     {
-        _generators = GameObject.FindGameObjectsWithTag("Spawner");
+        _generators = FindObjectsOfType<Spawner>();
 
         minimalPointNumber = 0;
         maximalPointNumber = _generators.Length;

@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 
-public class MoveDirectionSetter : MonoBehaviour
+public class Mover : MonoBehaviour
 {
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _speed;

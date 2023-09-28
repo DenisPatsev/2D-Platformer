@@ -922,6 +922,7 @@ GameObject:
   - component: {fileID: 348124191}
   - component: {fileID: 348124190}
   - component: {fileID: 348124189}
+  - component: {fileID: 348124192}
   m_Layer: 0
   m_Name: CoinSpawner
   m_TagString: Spawner
@@ -1018,6 +1019,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &348124192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348124188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83eb7424b41b1f44b6bd5f32b43ebc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &467951403
 GameObject:
   m_ObjectHideFlags: 0
@@ -2237,6 +2250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 527718882}
   - component: {fileID: 527718881}
+  - component: {fileID: 527718883}
   m_Layer: 0
   m_Name: CoinSpawner (7)
   m_TagString: Spawner
@@ -2311,6 +2325,18 @@ Transform:
   m_Father: {fileID: 348124191}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &527718883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527718880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83eb7424b41b1f44b6bd5f32b43ebc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &538366261
 GameObject:
   m_ObjectHideFlags: 0
@@ -2321,6 +2347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 538366263}
   - component: {fileID: 538366262}
+  - component: {fileID: 538366264}
   m_Layer: 0
   m_Name: CoinSpawner (8)
   m_TagString: Spawner
@@ -2395,6 +2422,18 @@ Transform:
   m_Father: {fileID: 348124191}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &538366264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538366261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83eb7424b41b1f44b6bd5f32b43ebc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &573492572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2637,6 +2676,7 @@ GameObject:
   m_Component:
   - component: {fileID: 688863416}
   - component: {fileID: 688863415}
+  - component: {fileID: 688863417}
   m_Layer: 0
   m_Name: CoinSpawner (1)
   m_TagString: Spawner
@@ -2711,6 +2751,18 @@ Transform:
   m_Father: {fileID: 348124191}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &688863417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688863414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83eb7424b41b1f44b6bd5f32b43ebc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705395202 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6323719953710832613, guid: a4b4a6d32bcb19248a754d6602ffc7e4, type: 3}
@@ -14571,6 +14623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 918602326}
   - component: {fileID: 918602325}
+  - component: {fileID: 918602327}
   m_Layer: 0
   m_Name: CoinSpawner (6)
   m_TagString: Spawner
@@ -14645,6 +14698,18 @@ Transform:
   m_Father: {fileID: 348124191}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &918602327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918602324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83eb7424b41b1f44b6bd5f32b43ebc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &942367587
 GameObject:
   m_ObjectHideFlags: 0
@@ -18675,6 +18740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1089453137}
   - component: {fileID: 1089453136}
+  - component: {fileID: 1089453138}
   m_Layer: 0
   m_Name: CoinSpawner (4)
   m_TagString: Spawner
@@ -18749,6 +18815,18 @@ Transform:
   m_Father: {fileID: 348124191}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1089453138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089453135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83eb7424b41b1f44b6bd5f32b43ebc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1140738981
 GameObject:
   m_ObjectHideFlags: 0
@@ -18759,6 +18837,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1140738982}
   - component: {fileID: 1140738983}
+  - component: {fileID: 1140738984}
   m_Layer: 0
   m_Name: CoinSpawner (2)
   m_TagString: Spawner
@@ -18833,6 +18912,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1140738984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140738981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83eb7424b41b1f44b6bd5f32b43ebc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1141478605
 GameObject:
   m_ObjectHideFlags: 0
@@ -19656,6 +19747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1457934561}
   - component: {fileID: 1457934560}
+  - component: {fileID: 1457934562}
   m_Layer: 0
   m_Name: CoinSpawner (5)
   m_TagString: Spawner
@@ -19730,6 +19822,18 @@ Transform:
   m_Father: {fileID: 348124191}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1457934562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457934559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83eb7424b41b1f44b6bd5f32b43ebc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1458625344
 GameObject:
   m_ObjectHideFlags: 0
@@ -21031,6 +21135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1989335683}
   - component: {fileID: 1989335682}
+  - component: {fileID: 1989335684}
   m_Layer: 0
   m_Name: CoinSpawner (9)
   m_TagString: Spawner
@@ -21105,6 +21210,18 @@ Transform:
   m_Father: {fileID: 348124191}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1989335684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989335681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83eb7424b41b1f44b6bd5f32b43ebc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2014964456
 GameObject:
   m_ObjectHideFlags: 0
@@ -21501,6 +21618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2112440045}
   - component: {fileID: 2112440044}
+  - component: {fileID: 2112440046}
   m_Layer: 0
   m_Name: CoinSpawner (3)
   m_TagString: Spawner
@@ -21575,6 +21693,18 @@ Transform:
   m_Father: {fileID: 348124191}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2112440046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112440043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83eb7424b41b1f44b6bd5f32b43ebc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2120321183
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,6 +1,8 @@
 using UnityEngine;
 using TMPro;
 
+[RequireComponent (typeof (TMP_Text))]
+
 public class CoinCount : MonoBehaviour
 {
     private TMP_Text _coinCount;
