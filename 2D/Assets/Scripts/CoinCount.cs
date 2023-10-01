@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-[RequireComponent (typeof (TMP_Text))]
+[RequireComponent(typeof(TMP_Text))]
 
 public class CoinCount : MonoBehaviour
 {
@@ -15,13 +15,9 @@ public class CoinCount : MonoBehaviour
         _coinCount.text = "Ñoins = " + _count;
     }
 
-    private void Update()
-    {
-        _coinCount.text = "Ñoins = " + _count;
-    }
-
     public void AddCoins()
     {
         _count++;
+        _coinCount.text = "Coins = " + _count;
     }
 }

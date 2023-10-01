@@ -6,11 +6,11 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    [SerializeField] private float _jumpForce;
-    [SerializeField] private float _speed;
-
     private const string IsRun = "isRun";
     private const string IsJump = "isJump";
+
+    [SerializeField] private float _jumpForce;
+    [SerializeField] private float _speed;
 
     private SpriteRenderer _playerRenderer;
     private Animator _playerAnimator;
