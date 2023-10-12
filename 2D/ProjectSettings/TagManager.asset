@@ -15,7 +15,7 @@ TagManager:
   - GridLayer
   - EnemyLayer
   - PlayerLayer
-  - 
+  - PathLayer
   - 
   - 
   - 

@@ -1,11 +1,11 @@
 using System.Collections;
 using UnityEngine;
 
-public class CoinSpawner : MonoBehaviour
+public class HealingSpawner : MonoBehaviour
 {
-    [SerializeField] private Coin _coin;
+    [SerializeField] private Potion _potion;
+    [SerializeField] private PotionSpawner[] _generators;
 
-    private Spawner[] _generators;
     private Transform _spawnerTransform;
 
     private float _secondCount;
@@ -16,17 +16,25 @@ public class CoinSpawner : MonoBehaviour
 
     private void Start()
     {
-        _generators = FindObjectsOfType<Spawner>();
-
         minimalPointNumber = 0;
         maximalPointNumber = _generators.Length;
-        _secondNumber = 2;
+        _secondNumber = 10;
 
         _isWorking = true;
 
         StartCoroutine(Generate(_secondNumber));
 
         _secondCount = 0;
+    }
+
+    private void Update()
+    {
+        int second = Mathf.FloorToInt(Time.time);
+
+        if (second > _secondCount)
+        {
+            _secondCount++;
+        }
     }
 
     private IEnumerator Generate(float secondsNumber)
@@ -42,7 +50,7 @@ public class CoinSpawner : MonoBehaviour
                 if (i == index)
                 {
                     _spawnerTransform = _generators[i].transform;
-                    GenerateCoin(_spawnerTransform.position);
+                    GeneratePotion(_spawnerTransform.position);
                 }
             }
 
@@ -50,8 +58,8 @@ public class CoinSpawner : MonoBehaviour
         }
     }
 
-    private void GenerateCoin(Vector3 position)
+    private void GeneratePotion(Vector3 position)
     {
-        Instantiate(_coin, position, Quaternion.identity);
+        Instantiate(_potion, position, Quaternion.identity);
     }
 }

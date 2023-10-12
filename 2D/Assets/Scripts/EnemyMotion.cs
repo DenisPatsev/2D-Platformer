@@ -1,7 +1,8 @@
+using System.Collections;
 using UnityEngine;
 
-[RequireComponent (typeof (Animator))]
-[RequireComponent (typeof (SpriteRenderer))]
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(SpriteRenderer))]
 
 public class EnemyMotion : MonoBehaviour
 {
@@ -11,8 +12,11 @@ public class EnemyMotion : MonoBehaviour
 
     private SpriteRenderer _spriteRenderer;
     private Animator _enemyAnimator;
+
     private int _collisionCount;
     private int _countDivider;
+
+    private bool _isWorking;
 
     private void Start()
     {
@@ -21,13 +25,20 @@ public class EnemyMotion : MonoBehaviour
 
         _collisionCount = 0;
         _countDivider = 2;
+        _isWorking = true;
 
         _enemyAnimator.SetBool(IsWalk, true);
+
+        StartCoroutine(Patroling());
+    }
+    public void StartPatroling()
+    {
+        StartCoroutine(Patroling());
     }
 
-    private void Update()
+    public void StopPatroling()
     {
-        transform.Translate(_speed * Time.deltaTime, 0, 0);
+        StopCoroutine(Patroling());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -42,6 +53,15 @@ public class EnemyMotion : MonoBehaviour
             {
                 _spriteRenderer.flipX = false;
             }
+        }
+    }
+
+    private IEnumerator Patroling()
+    {
+        while (_isWorking)
+        {
+            transform.Translate(_speed * Time.deltaTime, 0, 0);
+            yield return null;
         }
     }
 }
