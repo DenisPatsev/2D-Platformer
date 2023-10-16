@@ -2922,7 +2922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f225f3d949855044a706a4e55ada37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 12
 --- !u!114 &547986792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3020,7 +3020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f225f3d949855044a706a4e55ada37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 8
 --- !u!114 &557500996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3188,7 +3188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f225f3d949855044a706a4e55ada37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 10
 --- !u!114 &577320181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15488,7 +15488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f225f3d949855044a706a4e55ada37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 8
 --- !u!114 &897997840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15910,10 +15910,10 @@ RectTransform:
   m_Father: {fileID: 707454395}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -371, y: 182}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 0, y: 0.86866856}
+  m_AnchorMax: {x: 0.27400002, y: 1}
+  m_AnchoredPosition: {x: 3, y: -4}
+  m_SizeDelta: {x: -6, y: -6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1007728371
 MonoBehaviour:
@@ -20178,7 +20178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f225f3d949855044a706a4e55ada37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 8
 --- !u!114 &1192437027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20959,7 +20959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f225f3d949855044a706a4e55ada37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 12
 --- !u!114 &1424556996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21725,7 +21725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f225f3d949855044a706a4e55ada37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 8
 --- !u!114 &1678632839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22528,7 +22528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f225f3d949855044a706a4e55ada37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 10
 --- !u!114 &1785822443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22825,7 +22825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f225f3d949855044a706a4e55ada37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 8
 --- !u!114 &1869357664
 MonoBehaviour:
   m_ObjectHideFlags: 0

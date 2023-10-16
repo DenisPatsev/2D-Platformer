@@ -9,41 +9,31 @@ public class HealingSpawner : MonoBehaviour
     private Transform _spawnerTransform;
 
     private float _secondCount;
-    private int minimalPointNumber;
-    private int maximalPointNumber;
+    private int _minimalPointNumber;
+    private int _maximalPointNumber;
     private bool _isWorking;
-    private float _secondNumber;
+    private float _delay;
 
     private void Start()
     {
-        minimalPointNumber = 0;
-        maximalPointNumber = _generators.Length;
-        _secondNumber = 10;
+        _minimalPointNumber = 0;
+        _maximalPointNumber = _generators.Length;
+        _delay = 10;
 
         _isWorking = true;
 
-        StartCoroutine(Generate(_secondNumber));
+        StartCoroutine(Generate(_delay));
 
         _secondCount = 0;
     }
 
-    private void Update()
+    private IEnumerator Generate(float delay)
     {
-        int second = Mathf.FloorToInt(Time.time);
-
-        if (second > _secondCount)
-        {
-            _secondCount++;
-        }
-    }
-
-    private IEnumerator Generate(float secondsNumber)
-    {
-        var wait = new WaitForSeconds(secondsNumber);
+        var wait = new WaitForSeconds(delay);
 
         while (_isWorking)
         {
-            int index = Random.Range(minimalPointNumber, maximalPointNumber);
+            int index = Random.Range(_minimalPointNumber, _maximalPointNumber);
 
             for (int i = 0; i < _generators.Length; i++)
             {

@@ -11,12 +11,16 @@ public class Player : MonoBehaviour
 
     private Animator _animator;
 
-    private float _health;
+    private float _maximalHealth;
+    private float _currentHealth;
+    private float _healingEffect;
 
     private void Start()
     {
         _animator = GetComponent<Animator>();
-        _health = 100;
+        _maximalHealth = 100;
+        _currentHealth = _maximalHealth;
+        _healingEffect = 15;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -28,14 +32,30 @@ public class Player : MonoBehaviour
         }
         else if (collision.gameObject.TryGetComponent<Potion>(out Potion potion))
         {
-            _health += 15;
+            _currentHealth += _healingEffect;
             Destroy(collision.gameObject);
+            CheckHealth();
         }
     }
 
     public void TakeDamage(float damage)
     {
         _animator.SetTrigger(TakeHit);
-        _health -= damage;
+        _currentHealth -= damage;
+        CheckHealth();
+    }
+
+    private void CheckHealth()
+    {
+        if (_currentHealth < 0)
+        {
+            _currentHealth = 0;
+        }
+        else if (_currentHealth > _maximalHealth) 
+        {
+            _currentHealth = _maximalHealth;
+        }
+
+        Debug.Log(_currentHealth);
     }
 }
